@@ -1,0 +1,85 @@
+ /* 가상클래스를 사용해서 변수 선언 */
+:root{
+    /* Color */
+    --white-color: white;
+    --black-color: black;
+    --blue-color: blue;
+    --red-color: red;
+    --grey-dark-color: grey;
+    --grey-light-color: rgb(230, 224, 224);
+
+    /* Size */
+    --padding: 20px;
+
+    /* Font Size */
+    --font-super: 22px;
+    --font-large: 18px;
+    --font-medium: 14px;
+    --font-small: 12px;
+    --font-micro: 10px;
+}
+
+/* 모든 요소에 대한 공통적인 설정 */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    text-align: center;
+    padding: var(--padding);
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+ol{
+    margin: 10px 5px 5px 30px;
+}
+
+a{
+    margin: 5px 5px 5px 10px;
+    font-size: var(--font-large);
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper{
+    width: 100%;
+    height: 602px;
+    background-color: beige;
+    border: 2px solid;
+    margin-bottom: 5px;
+}
+
+._main{
+    width: 400px;
+    height: 494px;
+    border: 2px solid red;
+    float: left;
+    margin: 2px 5px 0px 5px;
+}
+
+._aside{
+    width: 400px;
+    height: 494px;
+    border: 2px solid blue;
+    float: left;
+    margin: 2px 5px 0px 5px;
+}
+
+div ._text{
+    text-align: center;
+    color: rgb(130, 58, 198);
+    font-weight: bold;
+    margin: 5px 5px 5px 5px;
+    font-size: var(--font-super);
+}
+
+._footer{
+    width: 100%;
+    height: 200px;
+    border: 2px solid;
+    float: left;
+    margin: 0px 0px 5px 0px;
+    background-color: rgb(195, 244, 245);
+}
