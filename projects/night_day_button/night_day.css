@@ -1,0 +1,21 @@
+.btn{
+    background-color: aquamarine;
+    width: 100px;
+    height: 40px;
+    font-size: 1.5em;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    float: left;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

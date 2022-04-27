@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
     <script src="./script.js"></script>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
+      <div id="_head">
         <h1>HTML, CSS, JAVASCRIPT 연습사이트</h1>
+      </div>
+      
+      <input id="_btn" type="button" value="night" onclick="toggle()"/>
     </header>
     <div class="wrapper">
-        <div class="_main">
-            <div class="_text">
-                여기는 메인
-            </div>
-            <ol>
-                <li class="_project">
-                    <a href="./projects/todolist/todo.html">첫 번째 프로젝트</a>
-                </li>
-            </ol>
-            
-        </div>
-        <div class="_aside">
-            <div class="_text">
-                여기는 사이드 qweqw 
-            </div>
-        </div>
+      <div class="_main">
+        <div class="_text">여기는 메인</div>
+        <ol>
+          <li>
+            <a href="./projects/todolist/todo.html">첫 번째 프로젝트</a>
+          </li>
+          <li><a href="./projects/night_day_button/night_day.html">night/day 모드 전환하기</a></li>
+        </ol>
+      </div>
+      <div class="_aside">
+        <div class="_text">여기는 사이드</div>
+        <p id="text"></p>
+      </div>
     </div>
 
     <div class="_footer">
-        <div class="_text">
-            여기는 푸터
-        </div>
+      <div class="_text">여기는 푸터</div>
     </div>
-</body>
+
+
+  </body>
 </html>

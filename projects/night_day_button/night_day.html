@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./night_day.css" />
+    <script src="./night_day.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1><a href="">WEB</a></h1>
+    </header>
+    <input
+      type="button"
+      id="night"
+      class="btn"
+      value="night"
+      onclick="
+      document.querySelector('#test_box').style.backgroundColor='black';
+      document.querySelector('#test_box').style.color='white'"
+    />
+    <input
+      type="button"
+      id="day"
+      class="btn"
+      value="day"
+      onclick="
+    document.querySelector('#test_box').style.backgroundColor='white';
+    document.querySelector('#test_box').style.color='black'"
+    />
+    <input
+      type="button"
+      id="all"
+      class="btn all_btn"
+      value="all_night"
+      onclick="
+        toggle()"
+    />
+    <ol>
+      <li>
+        <a href="">
+          <h2>HTML</h2>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <h2>CSS</h2>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <h2>JavaScript</h2>
+        </a>
+      </li>
+    </ol>
+    <div>
+      <p class="_print"></p>
+    </div>
+    <div id="test_box" class="box">
+      TEST_BOX
+    </div>
+    <div id="print_box" class="box" value="test">
+      test
+    </div>
+    <div id="tag_box" class="box"></div>
+  </body>
+
+  <input
+  type="button"
+  id="all"
+  class="btn all_btn"
+  value="all_night"
+  onclick="
+    toggle()"
+/>
+</html>
