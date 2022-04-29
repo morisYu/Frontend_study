@@ -2,11 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./todo.css">
+    <script src="https://kit.fontawesome.com/3b5371a0e4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    todoList 작성페이지
+    <div id="container">
+        <div id="header">
+            <h1>Todo List</h1>
+        </div>
+        <div id="input_site">
+            <input type="text" id="input_text" placeholder="Add your new todo">
+            <button id="input_button"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div id="list_site">
+            <ul>
+                <li>TODO list1 <span><i class="fa-solid fa-trash-can"></i></span> </li>
+                <li>TODO list2 <span><i class="fa-solid fa-trash-can"></i></span> </li>
+                <li>TODO list3 <span><i class="fa-solid fa-trash-can"></i></span> </li>
+                <li>TODO list4 <span><i class="fa-solid fa-trash-can"></i></span> </li>
+                <li>TODO list5 <span><i class="fa-solid fa-trash-can"></i></span> </li>
+            </ul>
+        </div>
+        <div id="state_site">
+            <span>current list have 5 EA</span>
+            <button id="clear_button">CLEAR ALL LISTS</button>
+        </div>
+    </div>
+    <div id="refernce_site">
+        <h2>REFERNCE SITE</h2>
+        <a href="https://youtu.be/ykuD2QOZkhc" target="_blank">HTML CSS 및 JavaScript를 사용한 Todo 목록 | 자바스크립트의 할일 목록</a>
+    </div>
+    
 </body>
 </html>
