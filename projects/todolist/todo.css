@@ -22,6 +22,7 @@ li{
     margin: 7px 0px 0px 0px;
     padding: 0px 0px 0px 10px;
     position: relative;
+    overflow: hidden;
 }
 
 #header{
@@ -53,12 +54,24 @@ li{
 
 #input_button{
     width: 60px;
-    height: 44px;
+    height: 100%;
     padding: 0px;
     margin-left: 5px;
-    background-color: blueviolet;
+    background-color: rgb(164, 22, 207);
     color: white;
     font-size: 2em;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+#input_button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#list_site{
+    max-height: 320px;
+    overflow-y: auto;
 }
 
 li span{
@@ -68,6 +81,17 @@ li span{
     color: rgb(255, 255, 255);
     width: 45px;
     text-align: center;
+    right: -50px;
+    transition: all 0.3s ease;
+}
+
+li:hover span{
+    position: absolute;
+    background-color: rgb(221, 73, 73);
+    color: rgb(255, 255, 255);
+    width: 45px;
+    text-align: center;
+    right: 0px;
 }
 
 #state_site{
@@ -87,8 +111,7 @@ li span{
     right: 10px;
 }
 
-#refernce_site{
+#reference_site{
     position: absolute;
     top: 600px;
-
 }
