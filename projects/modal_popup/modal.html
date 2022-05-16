@@ -6,14 +6,25 @@
     <link rel="stylesheet" href="./modal.css">
 </head>
 <body>
+    <!-- 모달 팝입 1 -->
     <div id="modal1">
         <div id="popup1">
-            <p class="close">X</p>
+            <img src="./dog.png" width="100px" style="margin-top: 10px;">
+            <p id="close_btn1" class="close">X</p>
+            <input class="input_box" type="text" id="log_id1" placeholder="ID 를 입력하세요(example@email.com)">
+            <input class="input_box" type="password" id="log_pass1" placeholder="비밀번호를 입력하세요">
+            <button class="login_btn" id="log_btn1">로그인</button>
         </div>
     </div>
+
+    <!-- 모달 팝업 2 -->
     <div id="modal2">
         <div id="popup2">
-            <p class="close">+</p>
+            <img src="./sun.png" width="170px" style="margin-top: 10px;">
+            <p id="close_btn2" class="close">X</p>
+            <input class="input_box" type="text" id="log_id2" placeholder="ID 를 입력하세요(example@email.com)">
+            <input class="input_box" type="password" id="log_pass2" placeholder="비밀번호를 입력하세요">
+            <button class="login_btn" id="log_btn2">로그인</button>
         </div>
     </div>
     <header>
@@ -22,11 +33,13 @@
 
     <div id="main_body">
         <main>
-            여기는 메인입니다.
+            <h3>팝업버튼-1</h3>
+            <h4>팝업버튼 눌러서 아이디, 비밀번호 입력 후 로그인 버튼 누르면 콘솔창에 아이디, 비밀번호 출력</h4>
             <button class="btn" id="popup_btn1">팝업버튼-1</button>
         </main>
         <aside>
-            여기는 사이드입니다.
+            <h3>팝업버튼-2</h3>
+            <h4>팝업버튼 눌러서 아이디, 비밀번호 입력 후 로그인 버튼 누르면 로컬스토리지에 아이디, 비밀번호 저장</h4>
             <button class="btn" id="popup_btn2">팝업버튼-2</button>
         </aside>
     </div>
